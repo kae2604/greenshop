@@ -8,7 +8,7 @@
     width: 100%;
 }
 .text_align_center{
-    text-align: center;
+    align-items: center;
 }
 
 .text_decoration_none{
@@ -26,6 +26,114 @@
 .justify_content_center{
     justify-content: center
 }
+
+.justify_content_between{
+    justify-content: space-between;
+}
+
+
+
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+
+header{
+    padding-top: 30px;
+    margin-bottom: 12px;
+}
+
+
+
+header nav ul{
+    gap: 50px;
+}
+
+
+header nav ul li{
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+.header_list{
+    font-weight: 700;
+}
+
+.header_login{
+    padding: 8px 17px;
+    background: #46A358;
+    border-radius: 6px;
+    display: inline-flex;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+header .container{
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+    padding-bottom: 18px;
+}
+
+
+
+main .banner .container{
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+}
+
+.banner_left{
+    padding-left: 40px;
+}
+
+main .banner .banner_left h3{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding-top: 68px;
+    margin-bottom: 7px;
+}
+
+main .banner .banner_left h1{
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 5px;
+}
+
+main .banner .banner_left h1 span{
+    color: #46a358;
+}
+
+main .banner .banner_left p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    margin-bottom: 44px;
+}
+
+main .banner .banner_left a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    background: #46a358;
+    text-decoration: none;
+    padding: 10px 27px;
+}
+
+
+
 
 
 
