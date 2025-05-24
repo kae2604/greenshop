@@ -5,145 +5,95 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Greenshop</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-    <div style="max-width: 500px;
-                margin: auto;
-                border: solid 1px silver;
-                border-bottom: solid 10px #46a358;
-                padding: 52px 100px 50px;
-                box-sizing: border-box;">
+    <div class="register_all
+                margin_auto">
 
-            <div style="text-align: center;
-                        margin-bottom: 40px;">
+            <div class="registration
+                        display_flex
+                        justify_content_center">
 
-                    <a style="font-weight: 500;
-                              font-size: 20px;
-                              line-height: 80%;
-                              color: #3d3d3d;"
+                    <a class="registration_login
+                              text_decoration_none"
+
                        href="#" target="blank"> Login </a>
 
                 I
-                    <a style="font-weight: 500;
-                              font-size: 20px;
-                              line-height: 80%;
-                              color: #46a358;"
+                    <a class="registration_register
+                              text_decoration_none"
+
                        href="#" target="blank"> Register </a>
 
             </div>
 
-            <p style="font-weight: 400;
-                      font-size: 13px;
-                      line-height: 123%;
-                      color: #3d3d3d;
-                      margin-bottom: 14px">
+
+            <p class="registration_text">
                 Enter your email and password to register.
             </p>
 
-        <form name="login" method="post" action="#">
 
-            <input type="text" name="username" placeholder="Username"
-                   style="width: 100%;
-                          border: 1px solid #eaeaea;
-                          border-radius: 5px;
-                          padding: 12px 14px;
-                          box-sizing: border-box;
-                          margin-bottom: 16px;">
+            <form name="login" method="post" action="#">
 
-            <input type="email" name="address" placeholder="Enter your email address"
-                   style="width: 100%;
-                          border: 1px solid #eaeaea;
-                          border-radius: 5px;
-                          padding: 12px 14px;
-                          box-sizing: border-box;
-                          margin-bottom: 16px;">
+                <input class="register_form_text"
+                       type="text" name="username" placeholder="Username">
 
-            <input type="password" name="password" placeholder="Password"
-                   style="width: 100%;
-                          border: 1px solid #eaeaea;
-                          border-radius: 5px;
-                          padding: 12px 14px;
-                          box-sizing: border-box;
-                          margin-bottom: 16px;">
+                <input class="register_form_text"
+                        type="email" name="address" placeholder="Enter your email address">
 
-            <input type="password" name="confirm" placeholder="Confirm Password"
-                   style="width: 100%;
-                          border: 1px solid #eaeaea;
-                          border-radius: 5px;
-                          padding: 12px 14px;
-                          box-sizing: border-box;
-                          margin-bottom: 41px;">
+                <input class="register_form_text"
+                        type="password" name="password" placeholder="Password">
 
-            <button type="submit"
-                    style="width: 100%;
-                           text-align: center;
-                           border-radius: 5px;
-                           border: none;
-                           font-weight: 700;
-                           font-size: 16px;
-                           line-height: 100%;
-                           color: #fff;
-                           background: #46a358;
-                           padding: 15px 15px;
-                           box-sizing: border-box;
-                           margin-bottom: 36px;">
-                    Register
-             </button>
+                <input class="register_form_text
+                              register_password"
+                        type="password" name="confirm" placeholder="Confirm Password">
 
-        </form>
+                <button class="registration_button
+                               width_100"
+                        type="submit">
+                        Register
+                </button>
 
-        <p style="font-weight: 400;
-                  font-size: 13px;
-                  line-height: 123%;
-                  color: #3d3d3d;
-                  width: 100%;
-                  text-align: center;
-                  margin-bottom: 27px;">
-            Or register with
-        </p>
+            </form>
 
-        <a style="width: 100%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  text-decoration: none;
-                  gap: 9px;
-                  font-weight: 500;
-                  font-size: 13px;
-                  line-height: 123%;
-                  color: #727272;
-                  border: 1px solid #eaeaea;
-                  border-radius: 5px;
-                  padding: 10px;
-                  box-sizing: border-box;
-                  margin-bottom: 15px;"
-           href="https://google.com" target="_blank">
-            <img src="images/google.png">
-            Continue with Google
-        </a>
 
-        <a style="width: 100%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  text-decoration: none;
-                  gap: 4px;
-                  font-weight: 500;
-                  font-size: 13px;
-                  line-height: 123%;
-                  text-align: center;
-                  color: #727272;
-                  border: 1px solid #eaeaea;
-                  border-radius: 5px;
-                  padding: 10px;
-                  box-sizing: border-box"
-           href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png">
-            Continue with Facebook
-        </a>
+            <p class="other_registration_text
+                      text_align_center">
+                Or register with
+            </p>
+
+
+            <a class="registration_google
+                      width_100
+                      display_flex
+                      justify_content_center
+                      text_align_center
+                      text_decoration_none"
+
+               href="https://google.com" target="_blank">
+                <img src="images/google.png">
+                Continue with Google
+            </a>
+
+            <a class="registration_facebook
+                      width_100
+                      display_flex
+                      justify_content_center
+                      text_align_center
+                      text_decoration_none"
+
+               href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png">
+                Continue with Facebook
+            </a>
 
     </div>
 

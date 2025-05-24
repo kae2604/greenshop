@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.width_100{
+    width: 100%;
+}
+.text_align_center{
+    text-align: center;
+}
+
+.text_decoration_none{
+    text-decoration: none;
+}
+
+.margin_auto{
+    margin: auto;
+}
+
+.display_flex{
+    display: flex
+}
+
+.justify_content_center{
+    justify-content: center
+}
+
+
+
+
+
+
+.register_all{
+    max-width: 500px;
+    border: solid 1px silver;
+    border-bottom: solid 10px #46a358;
+    padding: 52px 100px 50px
+}
+.registration{
+    margin-bottom: 40px;
+    gap: 11px;
+}
+.registration_login{
+    color: #3d3d3d;
+}
+
+.registration_register{
+    color: #46a358;
+}
+
+.registration_login, .registration_register{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 80%;
+}
+
+.registration_text{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+    margin-bottom: 14px
+}
+
+.register_form_text{
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.register_password{
+    margin-bottom: 41px;
+}
+
+.registration_button{
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    background: #46a358;
+    padding: 15px 15px;
+    margin-bottom: 36px;
+}
+
+.other_registration_text{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #3d3d3d;
+    margin-bottom: 27px;
+}
+.registration_google{
+    gap: 9px;
+    margin-bottom: 15px;
+}
+
+.registration_facebook{
+    gap: 4px;
+}
+
+.registration_google, .registration_facebook{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 123%;
+    color: #727272;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
