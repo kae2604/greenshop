@@ -1,13 +1,95 @@
+
+@font-face {
+    font-family: 'cera_probold';
+    src: url('../fonts/cera_pro_bold-webfont.eot');
+    src: url('../fonts/cera_pro_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cera_pro_bold-webfont.woff2') format('woff2'),
+    url('../fonts/cera_pro_bold-webfont.woff') format('woff'),
+    url('../fonts/cera_pro_bold-webfont.ttf') format('truetype'),
+    url('../fonts/cera_pro_bold-webfont.svg#cera_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../fonts/cera_pro_medium-webfont.eot');
+    src: url('../fonts/cera_pro_medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cera_pro_medium-webfont.woff2') format('woff2'),
+    url('../fonts/cera_pro_medium-webfont.woff') format('woff'),
+    url('../fonts/cera_pro_medium-webfont.ttf') format('truetype'),
+    url('../fonts/cera_pro_medium-webfont.svg#cera_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../fonts/cera_pro_regular-webfont.eot');
+    src: url('../fonts/cera_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cera_pro_regular-webfont.woff2') format('woff2'),
+    url('../fonts/cera_pro_regular-webfont.woff') format('woff'),
+    url('../fonts/cera_pro_regular-webfont.ttf') format('truetype'),
+    url('../fonts/cera_pro_regular-webfont.svg#cera_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cera_problack';
+    src: url('../fonts/cera_pro_black-webfont.eot');
+    src: url('../fonts/cera_pro_black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cera_pro_black-webfont.woff2') format('woff2'),
+    url('../fonts/cera_pro_black-webfont.woff') format('woff'),
+    url('../fonts/cera_pro_black-webfont.ttf') format('truetype'),
+    url('../fonts/cera_pro_black-webfont.svg#cera_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cera_prolight';
+    src: url('../fonts/cera_pro_light-webfont.eot');
+    src: url('../fonts/cera_pro_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cera_pro_light-webfont.woff2') format('woff2'),
+    url('../fonts/cera_pro_light-webfont.woff') format('woff'),
+    url('../fonts/cera_pro_light-webfont.ttf') format('truetype'),
+    url('../fonts/cera_pro_light-webfont.svg#cera_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
 .width_100{
     width: 100%;
 }
+
 .text_align_center{
+    text-align: center;
+}
+
+.align_items_center{
     align-items: center;
 }
 
@@ -35,9 +117,12 @@
 
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
+
+
+/*HEADER*/
 
 
 header{
@@ -45,52 +130,88 @@ header{
     margin-bottom: 12px;
 }
 
-
-
-header nav ul{
-    gap: 50px;
-}
-
-
-header nav ul li a{
-    font-weight: 400;
-    font-size: 16px;
-    color: #3d3d3d;
-    text-decoration: none;
-}
-
-.header_list{
-    font-weight: 700;
-}
-
-.header_login{
-    padding: 8px 17px;
-    background: #46A358;
-    border-radius: 6px;
-    display: inline-flex;
-    gap: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
-}
-
 header .container{
     border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
     padding-bottom: 18px;
 }
 
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    gap: 50px;
+}
+
+header nav ul li a{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+header nav ul li a:hover{
+    font-family: 'cera_probold';
+}
+
+header nav ul li a:hover::after{
+    display: flex;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #46A358;
+}
+
+
+.header_login{
+    padding: 8px 17px;
+    background: #46A358;
+    border-radius: 6px;
+    border: 1px solid #46A358 ;
+    display: inline-flex;
+    font-family: 'cera_promedium';
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.header_login::before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-image: url("../images/logout.svg");
+}
+
+.header_login:hover{
+    border: 1px solid red;
+}
+
+
+
+
+/**/
+
+/*MAIN*/
+
+/*BANER*/
 
 
 main .banner .container{
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    margin-bottom: 46px;
 }
 
+
 .banner_left{
+    max-width: 597px;
     padding-left: 40px;
-    margin-bottom: 85px;
 }
 
 main .banner .banner_left h3{
+    font-family: 'cera_promedium';
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
@@ -102,6 +223,7 @@ main .banner .banner_left h3{
 }
 
 main .banner .banner_left h1{
+    font-family: 'cera_problack';
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
@@ -115,6 +237,7 @@ main .banner .banner_left h1 span{
 }
 
 main .banner .banner_left p{
+    font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -123,15 +246,220 @@ main .banner .banner_left p{
 }
 
 main .banner .banner_left a{
+    font-family: 'cera_probold';
     font-weight: 700;
     font-size: 16px;
     line-height: 125%;
     text-transform: uppercase;
     color: #fff;
     border-radius: 6px;
+    border: 1px solid #46a358;
     background: #46a358;
-    text-decoration: none;
     padding: 10px 27px;
+    margin-bottom: 85px;
+}
+
+main .banner .banner_left a:hover{
+    border: 1px solid red;
+}
+
+.banner_right{
+    max-width: 507px;
+}
+
+
+
+/*CATEGORIES*/
+
+
+.categories_all{
+    gap: 50px;
+    margin-bottom: 90px;
+}
+
+.categories_left{
+    max-width: 310px;
+}
+
+.categories_left_top{
+    background: #fbfbfb;
+    padding: 14px 0 337px 18px;
+}
+
+.categories_left_top h3{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 30px;
+}
+
+.categories_left_top ul{
+    padding-left: 12px;
+}
+
+
+.categories_left_top ul li a{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+
+}
+
+.categories_left_top ul li{
+    margin-bottom: 28px;
+}
+
+
+.categories_left_top ul li:last-child{
+    margin-bottom: 0;
+}
+
+.categories_left_top ul li a:hover{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 267%;
+    color: #46a358;
+}
+
+.categories_left_bottom{
+    margin: 0 -30px;
+}
+
+
+
+.categories_right{
+    width: 100%;
+}
+
+.categories_right_top{
+    margin-bottom: 31px;
+}
+
+
+.categories_right_top_left{
+    max-width: 258px;
+    width: 100%;
+}
+
+
+.categories_right_top_left li a{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+
+.categories_right_top_left li a:hover{
+    font-family: 'cera_probold';
+    color: #46A358;
+}
+
+.categories_right_top_left li a:hover::after{
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color:  #46a358;
+}
+
+.categories_right_top_right{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    white-space: pre;
+}
+
+.categories_right_top_right::after{
+    display: flex;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/arrow_down.svg");
+    margin-left: 5px;
+}
+
+.categories_right_next{
+    margin-bottom: 70px;
+}
+
+.categories_right_next:last-of-type{
+    margin-bottom: 0;
+}
+
+.categories_right_card{
+    max-width: 258px;
+}
+
+.categories_right_card_top{
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    padding: 31px 4px 19px;
+    margin-bottom: 12px;
+}
+
+.categories_right_card img{
+    width: 250px;
+    height: 250px;
+}
+
+.categories_right_card p{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    margin-bottom: 6px;
+}
+
+.categories_right_card p:nth-of-type(2){
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+    margin-bottom: 0;
+}
+
+.categories_bottom{
+    margin-bottom: 94px;
+}
+
+.categories_bottom ul{
+    justify-content: end;
+    gap: 10px;
+}
+
+
+.categories_bottom a{
+    font-family: 'cera_prolight';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 10px 12px;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+.categories_bottom a:hover{
+    background: #46a358;
+    font-family: 'cera_probold';
+    font-weight: 700;
+    color: #fff;
 }
 
 
@@ -140,6 +468,17 @@ main .banner .banner_left a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*REGISTER*/
 
 
 .register_all{
@@ -156,6 +495,15 @@ main .banner .banner_left a{
     color: #3d3d3d;
 }
 
+.registration_login::after{
+    display: inline-block;
+    content: "";
+    Width: 1px;
+    Height: 12px;
+    background-color: black;
+    margin-left: 11px;
+}
+
 .registration_register{
     color: #46a358;
 }
@@ -164,9 +512,11 @@ main .banner .banner_left a{
     font-weight: 500;
     font-size: 20px;
     line-height: 80%;
+    font-family: 'cera_promedium';
 }
 
 .registration_text{
+    font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 13px;
     line-height: 123%;
@@ -174,7 +524,11 @@ main .banner .banner_left a{
     margin-bottom: 14px
 }
 
+
+
+
 .register_form_text{
+    font-family: 'cera_proregular';
     width: 100%;
     border: 1px solid #eaeaea;
     border-radius: 5px;
@@ -183,13 +537,23 @@ main .banner .banner_left a{
     margin-bottom: 16px;
 }
 
+.register_form_text:hover{
+    border: 1px solid green;
+}
+
+.register_form_text:focus{
+    border: 1px solid blue;
+}
+
+
 .register_password{
     margin-bottom: 41px;
 }
 
 .registration_button{
     border-radius: 5px;
-    border: none;
+    border: 1px solid #46a358;
+    font-family: 'cera_probold';
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
@@ -199,23 +563,63 @@ main .banner .banner_left a{
     margin-bottom: 36px;
 }
 
+.registration_button:hover{
+    border: 1px solid red;
+}
+
+.registration_button:focus{
+    border: 1px solid red;
+}
+
+
+
 .other_registration_text{
+    font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 13px;
     line-height: 123%;
     color: #3d3d3d;
     margin-bottom: 27px;
 }
+
+.other_registration_text::before{
+    display: inline-block;
+    content: "";
+    width: 90px;
+    height: 1px;
+    background-color: #EAEAEA;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+
+.other_registration_text::after{
+    display: inline-block;
+    content: "";
+    width: 90px;
+    height: 1px;
+    background-color: #EAEAEA;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+
 .registration_google{
-    gap: 9px;
     margin-bottom: 15px;
 }
 
-.registration_facebook{
-    gap: 4px;
+.registration_google:hover{
+    border: 1px solid green;
 }
 
+.registration_facebook:hover{
+    border: 1px solid green;
+}
+
+
+
 .registration_google, .registration_facebook{
+    font-family: 'cera_promedium';
     font-weight: 500;
     font-size: 13px;
     line-height: 123%;
@@ -225,6 +629,23 @@ main .banner .banner_left a{
     padding: 10px;
 }
 
+.registration_google::before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    background-image: url("../images/google.svg");
+}
+
+.registration_facebook::before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-image: url("../images/facebook.svg");
+}
 
 
 
