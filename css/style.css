@@ -115,11 +115,12 @@ a{
 
 
 
-
 .container{
     max-width: 1200px;
     margin: auto;
 }
+
+
 
 
 /*HEADER*/
@@ -192,7 +193,6 @@ header nav ul li a:hover::after{
 
 
 
-/**/
 
 /*MAIN*/
 
@@ -266,6 +266,9 @@ main .banner .banner_left a:hover{
 .banner_right{
     max-width: 507px;
 }
+
+
+
 
 
 
@@ -470,16 +473,7 @@ main .banner .banner_left a:hover{
 
 
 
-
-
-
-
-
-
-
-
 /*REGISTER*/
-
 
 .register_all{
     max-width: 500px;
@@ -615,7 +609,6 @@ main .banner .banner_left a:hover{
 .registration_facebook:hover{
     border: 1px solid green;
 }
-
 
 
 .registration_google, .registration_facebook{
