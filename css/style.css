@@ -613,9 +613,47 @@ main .banner .banner_left a:hover{
 }
 
 .blog_bottom{
+    background-color: #FBFBFB;
     max-width: 268px;
     width: 100%;
 }
+
+.blog_bottom p{
+    font-family: 'cera_promedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+    margin: 8px 0 4px;
+}
+
+.blog_bottom h3{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    margin-bottom: 4px;
+}
+
+.blog_bottom p:nth-of-type(2){
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    margin-bottom: 9px;
+}
+
+.blog_bottom a{
+    font-family: 'cera_promedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+}
+
+
 
 
 
