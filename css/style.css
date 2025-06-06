@@ -676,15 +676,8 @@ main .banner .banner_left a:hover{
     color: #46a358;
 }
 
-.blog_bottom a::after:hover{
-    display: inline-flex;
-    align-items: center;
-    content: "";
-    width: 16px;
-    height: 16px;
+.blog_bottom a:hover::after{
     background-image: url("../images/arrow_right_g.svg");
-    background-repeat: no-repeat;
-    margin-left: 6px;
 }
 
 
