@@ -234,12 +234,13 @@ header nav ul li a:hover::after{
 main .banner .container{
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
     margin-bottom: 46px;
+    align-items: center;
 }
 
 
 .banner_left{
     max-width: 597px;
-    padding-left: 40px;
+    padding: 68px 0 85px 40px;
 }
 
 main .banner .banner_left h3{
@@ -250,7 +251,7 @@ main .banner .banner_left h3{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #3d3d3d;
-    padding-top: 68px;
+
     margin-bottom: 7px;
 }
 
@@ -299,6 +300,7 @@ main .banner .banner_left a:hover{
 
 .banner_right{
     max-width: 507px;
+    height: 450px;
 }
 
 
@@ -613,9 +615,15 @@ main .banner .banner_left a:hover{
 }
 
 .blog_bottom{
-    background-color: #FBFBFB;
+    flex-direction: column;
+
     max-width: 268px;
     width: 100%;
+}
+
+.blog_bottom_bottom{
+    background-color: #FBFBFB;
+    padding: 9px 11px 12px 15px;
 }
 
 .blog_bottom p{
@@ -653,7 +661,31 @@ main .banner .banner_left a:hover{
     color: #3d3d3d;
 }
 
+.blog_bottom a::after{
+    display: inline-flex;
+    align-items: center;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/arrow_right_b.svg");
+    background-repeat: no-repeat;
+    margin-left: 6px;
+}
 
+.blog_bottom a:hover{
+    color: #46a358;
+}
+
+.blog_bottom a::after:hover{
+    display: inline-flex;
+    align-items: center;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/arrow_right_g.svg");
+    background-repeat: no-repeat;
+    margin-left: 6px;
+}
 
 
 
