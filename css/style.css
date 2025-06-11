@@ -129,17 +129,26 @@ a{
 
 
 
+
+
 /*HEADER*/
 
 
 header{
     padding-top: 30px;
     margin-bottom: 12px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
 }
 
 header .container{
     border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
-    padding-bottom: 18px;
+}
+
+.header_logo{
+    margin-bottom: 18px;
 }
 
 header nav{
@@ -175,24 +184,28 @@ header nav ul li a{
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 16px;
+    line-height: 30px;
     color: #3d3d3d;
 }
 
-header nav ul li a::after{
-    display: block;
-    content: "";
-    width: 100%;
-    height: 3px;
-    background-color: transparent;
-}
-
-
 header nav ul li a:hover{
     font-family: 'cera_probold';
+
 }
 
-header nav ul li a:hover::after{
+header nav ul li::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
     background-color: #46A358;
+    transition: 0.6s;
+    margin-top: 22px;
+
+}
+
+header nav ul li:hover::after{
+    width: 100%;
 }
 
 
@@ -207,6 +220,7 @@ header nav ul li a:hover::after{
     font-weight: 500;
     font-size: 16px;
     color: #fff;
+    margin-bottom: 18px;
 }
 
 .header_login::before{
@@ -227,6 +241,10 @@ header nav ul li a:hover::after{
 
 
 /*MAIN*/
+
+main{
+    padding-top: 95px;
+}
 
 /*BANER*/
 
@@ -311,7 +329,7 @@ main .banner .banner_left a:hover{
 /*CATEGORIES*/
 
 .categories{
-    margin-bottom: 94px;
+    margin-bottom: 146px;
 }
 
 
@@ -345,7 +363,7 @@ main .banner .banner_left a:hover{
 }
 
 .categories_left_top ul li{
-    margin-bottom: 25px;
+    margin-bottom: 29px;
 }
 
 .categories_left_top ul li:last-child{
@@ -405,22 +423,24 @@ main .banner .banner_left a:hover{
     color: #3d3d3d;
 }
 
-.categories_right_top_left li a::after{
-    display: block;
-    content: "";
-    width: 100%;
-    height: 3px;
-    background-color: transparent;
-}
-
 .categories_right_top_left li a:hover{
     font-family: 'cera_probold';
     font-weight: 700;
     color: #46A358;
 }
 
-.categories_right_top_left li a:hover::after{
+.categories_right_top_left li::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
     background-color:  #46a358;
+    margin-top: 5px;
+    transition: 0.6s;
+}
+
+.categories_right_top_left li:hover::after{
+    width: 100%;
 }
 
 .categories_right_top_right{
@@ -449,15 +469,25 @@ main .banner .banner_left a:hover{
 
 .categories_right_card{
     max-width: 258px;
+    border-top:  1px solid #fbfbfb;
+    overflow: hidden;
+    position: relative;
 }
+
+.categories_right_card:hover{
+    border-top:  1px solid #46a358;
+}
+
 
 .categories_right_card_top{
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
-    padding: 31px 4px 19px;
+    padding: 30px 4px 30px;
     margin-bottom: 12px;
 }
 
-.categories_right_card img{
+
+.categories_right_card a img{
+    max-width: 250px;
     height: 250px;
 }
 
@@ -478,6 +508,86 @@ main .banner .banner_left a:hover{
     line-height: 89%;
     color: #46a358;
     margin-bottom: 0;
+    display: inline;
+    margin-right: 16px;
+}
+
+.categories_right_card span:nth-of-type(3){
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    display: inline;
+}
+
+
+.categories_right_card ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    left: -200px;
+    bottom: 55px;
+    transition: 0.5s;
+}
+
+.categories_right_card:hover ul{
+    left: 0;
+}
+
+.categories_right_card ul a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+}
+
+.categories_right_card ul li:first-of-type a:after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/shopping.svg");
+    background-repeat: no-repeat;
+}
+
+.categories_right_card ul li:nth-of-type(2) a:after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/heart.svg");
+    background-repeat: no-repeat;
+}
+
+.categories_right_card ul li:last-of-type a:after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/loupe.svg");
+    background-repeat: no-repeat;
+}
+
+.categories_right_card_label{
+    display: inline-block;
+    background-color: #46A358;
+    padding: 7px 8px;
+    font-family: 'cera_promedium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    position: absolute;
+    top: 14px;
+    left: 0;
 }
 
 
@@ -492,59 +602,85 @@ main .banner .banner_left a:hover{
     gap: 10px;
 }
 
-.categories_bottom a{
+.categories_bottom li{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    }
+
+.categories_bottom li:hover{
+    background: #46a358;
+}
+
+.categories_bottom ul li a{
     font-family: 'cera_prolight';
     font-weight: 300;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
-    border: 1px solid #e5e5e5;
-    border-radius: 4px;
     width: 35px;
     height: 35px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
-
-.categories_bottom a:hover{
-    background: #46a358;
+.categories_bottom li a:hover{
     font-family: 'cera_probold';
     font-weight: 700;
     color: #fff;
 }
 
-
-
-
-
-
-/*BLOG*/
-
-.blog{
-    margin-bottom: 100px;
+.categories_bottom ul li:last-of-type a:after{
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/arrow_right.svg");
 }
 
-.blog_top{
+.categories_bottom ul li:last-of-type a:hover:after{
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/arrow_right_hover.svg");
+}
+
+
+
+
+
+
+/*PROMO*/
+
+
+
+
+
+.promo{
+    margin-bottom: 138px;
+}
+
+.promo_all{
     background-color: #FBFBFB;
     max-width: 586px;
-    margin-bottom: 138px;
-    padding: 37px 30px 0 0;
+    padding: 37px 30px 46px 0;
+    position: relative;
 }
 
 
-.blog_top_left img{
-    margin-top: -85px;
-    max-width: 270px;
+.promo_left img{
+    position: absolute;
+    bottom: 10px;
+    max-width: 287px;
     height: 292px;
 }
 
-.blog_top_right{
+.promo_right{
     text-align: right;
 }
 
-.blog_top h3{
+.promo h3{
     display: inline-block;
     max-width: 150px;
     font-family: 'cera_problack';
@@ -556,7 +692,7 @@ main .banner .banner_left a:hover{
     margin-bottom: 9px;
 }
 
-.blog_top p{
+.promo p{
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 14px;
@@ -565,7 +701,7 @@ main .banner .banner_left a:hover{
     margin-bottom: 25px;
 }
 
-.blog_top a{
+.promo a{
     display: inline-flex;
     align-items: center;
     padding: 10px 24px;
@@ -577,10 +713,9 @@ main .banner .banner_left a:hover{
     background: #46a358;
     border-radius: 6px;
     border: 1px solid #46a358;
-    margin-bottom: 46px;
 }
 
-.blog_top a:after{
+.promo a:after{
     display: inline-block;
     content:"";
     width: 18px;
@@ -589,10 +724,18 @@ main .banner .banner_left a:hover{
     background-image: url("../images/arrow_rght_w.svg");
 }
 
-.blog_top a:hover{
+.promo a:hover{
     border: 1px solid red;
 }
 
+
+
+
+/*BLOG*/
+
+.blog{
+    margin-bottom: 100px;
+}
 
 .blog h2{
     font-family: 'cera_probold';
