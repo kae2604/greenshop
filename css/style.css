@@ -465,8 +465,6 @@ main .banner .banner_left a:hover{
     gap: 70px 33px;
 }
 
-
-
 .categories_right_card{
     max-width: 258px;
     border-top:  1px solid #fbfbfb;
@@ -478,17 +476,16 @@ main .banner .banner_left a:hover{
     border-top:  1px solid #46a358;
 }
 
-
 .categories_right_card_top{
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
-    padding: 30px 4px 30px;
+    padding: 20px 4px 40px;
     margin-bottom: 12px;
 }
-
 
 .categories_right_card a img{
     max-width: 250px;
     height: 250px;
+   object-fit: contain;
 }
 
 .categories_right_card span{
@@ -539,7 +536,7 @@ main .banner .banner_left a:hover{
     left: 0;
 }
 
-.categories_right_card ul a{
+.categories_right_card ul li{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,7 +551,16 @@ main .banner .banner_left a:hover{
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("../images/shopping.svg");
+    background-image: url("../images/shopping_grey.svg");
+    background-repeat: no-repeat;
+}
+
+.categories_right_card ul li:first-of-type:hover a:after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/shopping_green.svg");
     background-repeat: no-repeat;
 }
 
@@ -563,18 +569,38 @@ main .banner .banner_left a:hover{
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("../images/heart.svg");
+    background-image: url("../images/heart_grey.svg");
     background-repeat: no-repeat;
 }
+
+.categories_right_card ul li:nth-of-type(2):hover a:after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/heart_green.svg");
+    background-repeat: no-repeat;
+}
+
 
 .categories_right_card ul li:last-of-type a:after{
     display: block;
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url("../images/loupe.svg");
+    background-image: url("../images/loupe_grey.svg");
     background-repeat: no-repeat;
 }
+
+.categories_right_card ul li:last-of-type:hover a:after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/loupe_green.svg");
+    background-repeat: no-repeat;
+}
+
 
 .categories_right_card_label{
     display: inline-block;
