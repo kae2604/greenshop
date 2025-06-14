@@ -118,9 +118,6 @@ a{
 
 
 
-
-
-
 .container{
     max-width: 1200px;
     margin: auto;
@@ -129,10 +126,7 @@ a{
 
 
 
-
-
 /*HEADER*/
-
 
 header{
     padding-top: 30px;
@@ -150,6 +144,7 @@ header .container{
 .header_logo{
     margin-bottom: 18px;
 }
+
 
 header nav{
     display: flex;
@@ -224,10 +219,6 @@ header nav ul li:hover::after{
     width: 100%;
 }
 
-
-
-
-
 header nav ul li.dropdown{
     position: relative;
 }
@@ -243,14 +234,9 @@ header nav ul li.dropdown ul.submenu{
 }
 
 header nav ul li.dropdown:hover ul.submenu{
-    height: 143px;
     overflow: visible;
+    height: 143px;
 }
-
-
-
-
-
 
 header nav ul li.dropdown ul.submenu li{
     padding: 7px 14px;
@@ -326,17 +312,6 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .header_login{
     padding: 8px 17px;
     background: #46A358;
@@ -372,9 +347,7 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
 main{
     padding-top: 95px;
 }
-
-/*BANER*/
-
+/*BANNER*/
 
 main .banner .container{
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
