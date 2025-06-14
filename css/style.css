@@ -160,25 +160,42 @@ header nav{
 header nav ul{
     gap: 50px;
 }
+
+header nav ul li ul{
+    gap: 0;
+}
+
 header nav ul li:first-of-type{
     width: 45px;
+}
+
+header nav ul li:first-of-type ul li{
+    width: auto;
 }
 
 header nav ul li:nth-of-type(2){
     width: 38px;
 }
 
+header nav ul li:nth-of-type(2) ul li{
+    width: auto;
+}
+
 header nav ul li:nth-of-type(3){
     width: 80px;
+}
+
+header nav ul li:nth-of-type(3) ul li{
+    width: auto;
 }
 
 header nav ul li:last-of-type{
     width: 45px;
 }
 
-
-
-
+header nav ul li:last-of-type ul li{
+    width: auto;
+}
 
 header nav ul li a{
     font-family: 'cera_proregular';
@@ -201,12 +218,116 @@ header nav ul li::after{
     background-color: #46A358;
     transition: 0.6s;
     margin-top: 22px;
-
 }
 
 header nav ul li:hover::after{
     width: 100%;
 }
+
+
+
+
+
+header nav ul li.dropdown{
+    position: relative;
+}
+header nav ul li ul.submenu{
+    min-width: 188px;
+    background-color: #edf6ee;
+    position: absolute;
+    top: 65px;
+    left: -55px;
+    overflow: hidden;
+    height: 0;
+    transition: 0.6s;
+}
+
+header nav ul li.dropdown:hover ul.submenu{
+    height: 143px;
+}
+
+header nav ul li.dropdown ul.submenu li{
+    padding: 7px 14px;
+}
+
+header nav ul li.dropdown ul.submenu li::after{
+    display: none;
+}
+
+header nav ul li.dropdown ul.submenu li:hover{
+    background-color: #1a712a;
+    width: 100%;
+}
+
+header nav ul li.dropdown ul.submenu li a{
+    line-height: 22px;
+}
+
+header nav ul li.dropdown ul.submenu li:last-of-type a:after{
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url("../images/arrow_submenu_right_bl.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+}
+
+header nav ul li.dropdown ul.submenu li:last-of-type:hover a:after{
+    background-image: url("../images/arrow_submenu_left_w.svg.svg");
+}
+
+header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li a:after{
+    display: none;
+}
+
+header nav ul li.dropdown ul.submenu li:hover a{
+    font-family: 'cera_probold';
+    color: #fff;
+}
+
+header nav ul li.dropdown ul.submenu li:last-of-type{
+    position: relative;
+}
+
+header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2{
+    background-color: #edf6ee;
+    min-width: 178px;
+    position: absolute;
+    top: -109px;
+    left: 190px;
+    overflow: hidden;
+    height: 0;
+    transition: 0.6s;
+}
+
+header nav ul li.dropdown ul.submenu li:last-of-type:hover ul.submenu_2{
+    height: 215px;
+}
+
+header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li a{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
+    font-family: 'cera_probold';
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -257,8 +378,8 @@ main .banner .container{
 
 
 .banner_left{
-    max-width: 597px;
-    padding: 68px 0 85px 40px;
+    max-width: 693px;
+    padding: 68px 0 94px 40px;
 }
 
 main .banner .banner_left h3{
@@ -269,7 +390,6 @@ main .banner .banner_left h3{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #3d3d3d;
-
     margin-bottom: 7px;
 }
 
@@ -307,18 +427,16 @@ main .banner .banner_left a{
     border: 1px solid #46a358;
     background: #46a358;
     padding: 10px 27px;
-    margin-bottom: 85px;
+
 }
 
 main .banner .banner_left a:hover{
     border: 1px solid red;
 }
 
-
-
 .banner_right{
-    max-width: 507px;
-    height: 450px;
+    max-width: 450px;
+    max-height: 450px;
 }
 
 
