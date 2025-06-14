@@ -237,17 +237,14 @@ header nav ul li.dropdown ul.submenu{
     position: absolute;
     top: 65px;
     left: -55px;
-    /*overflow: hidden;*/
-    /*height: 0;*/
+    overflow: hidden;
+    height: 0;
     transition: 0.6s;
-    visibility: hidden;
-    opacity: 0;
 }
 
 header nav ul li.dropdown:hover ul.submenu{
-    /*height: 143px;*/
-    visibility: visible;
-    opacity: 1;
+    height: 143px;
+    overflow: visible;
 }
 
 
