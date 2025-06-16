@@ -222,21 +222,37 @@ header nav ul li:hover::after{
 header nav ul li.dropdown{
     position: relative;
 }
-header nav ul li.dropdown ul.submenu{
-    min-width: 188px;
-    background-color: #edf6ee;
+
+
+
+header nav ul li.dropdown .dropdown_all{
+    overflow: hidden;
+    height: 0;
+    transition: 0.6s;
     position: absolute;
     top: 65px;
     left: -55px;
-    overflow: hidden;
-    height: 0;
-    transition: 0.4s;
+    align-items: start;
+    width: 355px;
 }
 
-header nav ul li.dropdown:hover ul.submenu{
-    overflow: visible;
-    height: 143px;
+header nav ul li.dropdown:hover .dropdown_all{
+    /*overflow: visible;*/
+    height: 215px;
 }
+
+
+
+
+header nav ul li.dropdown ul.submenu{
+    min-width: 188px;
+    background-color: #edf6ee;
+}
+
+
+
+
+
 
 header nav ul li.dropdown ul.submenu li{
     padding: 7px 14px;
@@ -291,7 +307,7 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2{
     left: 190px;
     overflow: hidden;
     width: 0;
-    transition: 0.4s;
+    transition: 0.6s;
     /*min-width: 178px;*/
     /*height: 0;*/
 }
@@ -307,12 +323,34 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li a{
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
+    white-space: nowrap;
 }
 
 header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
     font-family: 'cera_probold';
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .header_login{
