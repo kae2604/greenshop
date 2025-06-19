@@ -115,14 +115,9 @@ a{
     justify-content: space-between;
 }
 
-
-
 .flex_wrap{
     flex-wrap: wrap;
 }
-
-
-
 
 .container{
     max-width: 1200px;
@@ -150,7 +145,6 @@ header .container{
 .header_logo{
     margin-bottom: 18px;
 }
-
 
 header nav{
     display: flex;
@@ -229,8 +223,6 @@ header nav ul li.dropdown{
     position: relative;
 }
 
-
-
 header nav ul li.dropdown .dropdown_all{
     overflow: hidden;
     height: 0;
@@ -247,17 +239,10 @@ header nav ul li.dropdown:hover .dropdown_all{
     height: 215px;
 }
 
-
-
-
 header nav ul li.dropdown ul.submenu{
     min-width: 188px;
     background-color: #edf6ee;
 }
-
-
-
-
 
 
 header nav ul li.dropdown ul.submenu li{
@@ -290,7 +275,7 @@ header nav ul li.dropdown ul.submenu li:last-of-type a:after{
 }
 
 header nav ul li.dropdown ul.submenu li:last-of-type:hover a:after{
-    background-image: url("../images/arrow_submenu_left_w.svg.svg");
+    background-image: url("../images/arrow_submenu_left_w.svg");
 }
 
 header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li a:after{
@@ -337,28 +322,6 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
     color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header_login{
     padding: 8px 17px;
     background: #46A358;
@@ -401,7 +364,6 @@ main .banner .container{
     margin-bottom: 46px;
     align-items: center;
 }
-
 
 .banner_left{
     max-width: 693px;
@@ -482,8 +444,6 @@ main .banner .banner_left a:hover{
     margin-bottom: 90px;
 }
 
-
-
 .categories_left{
     max-width: 310px;
 }
@@ -532,9 +492,6 @@ main .banner .banner_left a:hover{
     margin: 0 -30px;
 }
 
-
-
-
 .categories_right{
     max-width: 840px;
     width: 100%;
@@ -543,7 +500,6 @@ main .banner .banner_left a:hover{
 .categories_right_top{
     margin-bottom: 38px;
 }
-
 
 .categories_right_top_left{
     max-width: 258px;
@@ -745,7 +701,6 @@ main .banner .banner_left a:hover{
     background-repeat: no-repeat;
 }
 
-
 .categories_right_card_label{
     display: inline-block;
     background-color: #46A358;
@@ -759,11 +714,6 @@ main .banner .banner_left a:hover{
     top: 14px;
     left: 0;
 }
-
-
-
-
-
 
 .categories_bottom ul{
     justify-content: end;
@@ -832,7 +782,6 @@ main .banner .banner_left a:hover{
     padding: 37px 30px 46px 0;
     position: relative;
 }
-
 
 .promo_left img{
     position: absolute;
@@ -1288,9 +1237,6 @@ main .banner .banner_left a:hover{
     color: #3d3d3d;
     margin-bottom: 22px;
 }
-
-
-
 
 
 
