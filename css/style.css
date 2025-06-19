@@ -1190,10 +1190,6 @@ main .banner .banner_left a:hover{
     margin-bottom: 6px;
 }
 
-.footer_top .footer_block:nth-of-type(2){
-   width: 130px;
-}
-
 .footer_top .footer_block h3{
     font-family: 'cera_probold';
     font-weight: 700;
@@ -1212,8 +1208,7 @@ main .banner .banner_left a:hover{
 }
 
 .footer_top .footer_block ul li a:hover{
-    font-family: 'cera_probold';
-    font-weight: 700;
+    font-weight: 400;
     color: #46a358;
 }
 
