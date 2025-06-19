@@ -107,9 +107,15 @@ a{
     justify-content: center
 }
 
+.justify_content_start{
+    justify-content: start;
+}
+
 .justify_content_between{
     justify-content: space-between;
 }
+
+
 
 .flex_wrap{
     flex-wrap: wrap;
@@ -623,7 +629,7 @@ main .banner .banner_left a:hover{
 .categories_right_card a img{
     max-width: 250px;
     height: 250px;
-   object-fit: contain;
+    object-fit: contain;
 }
 
 .categories_right_card span{
@@ -985,6 +991,320 @@ main .banner .banner_left a:hover{
 
 
 
+       /*NEWSLETTER*/
+
+.newsletter_all{
+    background: #fbfbfb;
+    padding: 24px 25px;
+}
+
+.newsletter_block{
+    max-width: 204px;
+    position: relative;
+}
+
+
+.newsletter_block:first-of-type::after,
+.newsletter_block:nth-of-type(2)::after{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 187px;
+    background: rgba(70, 163, 88, 0.1);
+    position: absolute;
+    top: 6px;
+    left: 234px;
+}
+
+.newsletter_block_last{
+    max-width: 354px;
+}
+
+.newsletter_block img{
+    margin-bottom: 15px;
+}
+
+.newsletter_all h3{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+    margin-bottom: 9px;
+}
+
+.newsletter_block_last h3{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    padding-top: 13px;
+    margin-bottom: 25px;
+
+}
+
+.newsletter_all p{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    position: relative;
+}
+
+.newsletter_block_last p{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 169%;
+    color: #727272;
+}
+
+.newsletter_block_form{
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.newsletter_block_input{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #acacac;
+    padding: 12px 0 12px 11px;
+    background: #fff;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #eaeaea;
+    width: 100%;
+}
+
+.newsletter_block_input:hover{
+    border: 1px solid #46a358;
+}
+
+
+.newsletter_block_button{
+    background: #46a358;
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+    padding: 12px 25px 12px 26px;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid #46A358;
+}
+
+.newsletter_block_button:hover{
+    border: 1px solid red;
+}
+
+
+
+
+
+       /*CONTACTS*/
+
+.contacts_all{
+    background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+    height: 88px;
+}
+
+
+.contacts_all img{
+    padding-left: 23px;
+}
+
+.contacts_all a{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #3d3d3d;
+}
+
+.contacts_all a:first-of-type{
+    margin-right: 116px;
+}
+
+.contacts_all a:nth-of-type(2){
+    max-width: 176px;
+    margin-right: 90px;
+    position: relative;
+}
+
+.contacts_all a:nth-of-type(2):before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/location.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -29px;
+    top: 14px;
+}
+
+.contacts_all a:nth-of-type(3){
+    max-width: 165px;
+    margin-right: 101px;
+    position: relative;
+}
+
+.contacts_all a:nth-of-type(3):before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/message.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -29px;
+    top: 2px;
+}
+
+.contacts_all a:last-of-type{
+    position: relative;
+}
+
+.contacts_all a:last-of-type:before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/calling.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -28px;
+    top: 2px;
+}
+
+
+
+     /*FOOTER*/
+
+
+.footer_top{
+    background: #fbfbfb;
+    padding: 33px 155px 29px 25px;
+    border-bottom: solid 1px rgba(70, 163, 88, 0.2);
+    margin-bottom: 6px;
+}
+
+.footer_top .footer_block:nth-of-type(2){
+   width: 130px;
+}
+
+.footer_top .footer_block h3{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 8px;
+}
+
+
+
+.footer_top .footer_block ul li a{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+}
+
+.footer_top .footer_block ul li a:hover{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    color: #46a358;
+}
+
+
+
+.footer_block:last-of-type h3{
+    margin-bottom: 20px;
+}
+
+.footer_block:last-of-type ul{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 33px;
+}
+
+.footer_block:last-of-type ul li:first-of-type a:after{
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/facebook_footer.svg");
+    background-repeat: no-repeat;
+}
+
+.footer_block:last-of-type ul li{
+    transition: 0.4s;
+}
+
+.footer_block:last-of-type ul li:hover{
+    transform: scale(130%);
+}
+
+
+.footer_block:last-of-type ul li:nth-of-type(2) a:after{
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/instagram_footer.svg");
+    background-repeat: no-repeat;
+}
+
+.footer_block:last-of-type ul li:nth-of-type(3) a:after{
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/twitter_footer.svg");
+    background-repeat: no-repeat;
+}
+
+.footer_block:last-of-type ul li:nth-of-type(4):after{
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/linkidin_footer.svg");
+    background-repeat: no-repeat;
+}
+
+
+.footer_block:last-of-type ul li:last-of-type:after{
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/youtube_footer.svg");
+    background-repeat: no-repeat;
+}
+
+
+
+.footer_block:last-of-type h3:last-of-type{
+    margin-bottom: 13px;
+}
+
+
+
+.footer_bottom{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    margin-bottom: 22px;
+}
 
 
 
@@ -1005,7 +1325,12 @@ main .banner .banner_left a:hover{
 
 
 
-/*REGISTER*/
+
+
+
+
+
+    /*REGISTER*/
 
 .register_all{
     max-width: 500px;
