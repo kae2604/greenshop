@@ -320,11 +320,14 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
 }
 
 
+
+
 .header_login{
     margin-bottom: 18px;
     border-radius: 7px;
     border: 1px solid #46A358;
-    transition:  0.4s;
+    background-color: #46A35880;
+    overflow: hidden;
 }
 
 .header_login:hover{
@@ -333,8 +336,8 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
 
 .header_login:active{
     border: 1px solid #46A358;
-    background-color: #46A35880;
 }
+
 
 .header_login a{
     padding: 8px 17px;
@@ -346,6 +349,8 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
     font-size: 16px;
     color: #fff;
     transition:  0.4s;
+
+    will-change: transform;
 }
 
 .header_login a::before{
@@ -366,6 +371,9 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
 .header_login a:focus {
     outline: none;
 }
+
+
+
 
 
 
