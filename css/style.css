@@ -377,9 +377,6 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
 
 
 
-
-
-
 /*MAIN*/
 
 main{
@@ -1433,6 +1430,251 @@ main .banner .banner_left a:hover{
     margin-right: 4px;
     background-image: url("../images/facebook.svg");
 }
+
+
+
+
+
+
+
+.preloader{
+
+    width: 100vw;
+    height: 100vh;
+    background: grey;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+
+    animation-name: preloader;
+    animation-duration: 6s;
+
+}
+
+@keyframes preloader {
+    0%{
+        display: block;
+    }
+
+    100%{
+        display: none;
+    }
+
+}
+
+
+
+.circle_white{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+
+    animation-name: circle_w;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+
+}
+
+.circle_white_left{
+    width: 100px;
+    height: 200px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: black;
+    position: relative;
+    z-index: 12;
+
+
+}
+
+.circle_white_left_inter{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 25%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.circle_black{
+    justify-content: end;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+
+    animation-name: circle_b;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.circle_black_right{
+    width: 100px;
+    height: 200px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background: white;
+    position: relative;
+    z-index: 12;
+}
+
+.circle_right_inter{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    top: 25%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@keyframes circle_w {
+    0% {
+        left: 0%;
+        top: 50%;
+        transform: translate(0, -50%) rotate(0deg);
+    }
+    20% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    30% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(405deg);
+    }
+
+    40% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(450deg);
+    }
+
+    50% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(495deg);
+    }
+
+    60% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(540deg);
+    }
+
+    70% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(585deg);
+    }
+
+    80% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(630deg);
+    }
+
+    90% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(675deg);
+    }
+
+    100% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(720deg);
+    }
+
+}
+
+@keyframes circle_b {
+    0% {
+        left: 100%;
+        top: 50%;
+        transform: translate(-100%, -50%) rotate(0deg);
+    }
+
+
+    20% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+
+    30% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-405deg);
+    }
+
+    40% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-450deg);
+    }
+
+    50% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-495deg);
+    }
+
+    60% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-540deg);
+    }
+
+    70% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-585deg);
+    }
+
+    80% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-630deg);
+    }
+
+    90% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-675deg);
+    }
+
+    100% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-720deg);
+    }
+
+}
+
+
+
+
+
+
+
+
 
 
 
