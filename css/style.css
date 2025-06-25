@@ -1435,307 +1435,149 @@ main .banner .banner_left a:hover{
 
 
 
-
+                /*PRELOADER*/
 
 .preloader{
-
     width: 100vw;
     height: 100vh;
-    background: grey;
+    background-color: lightgray;
     position: fixed;
     z-index: 10;
     overflow: hidden;
 
     animation-name: preloader;
-    animation-duration: 6s;
-
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes preloader {
     0%{
-        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    65%{
+        visibility: visible;
+        opacity: 1;
     }
 
     100%{
-        display: none;
+        visibility: hidden;
+        opacity: 0;
     }
-
 }
 
 
-
-.circle_white{
-    width: 200px;
-    height: 200px;
-    background-color: white;
+.circle_out{
+    width: 250px;
+    height: 250px;
+    background-color: lightgray;
     position: absolute;
-    left: 0;
-    border-radius: 50%;
-
-    animation-name: circle_w;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-
-
-}
-
-.circle_white_left{
-    width: 100px;
-    height: 200px;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    background: black;
-    position: relative;
-    z-index: 12;
-
-
-}
-
-.circle_white_left_inter{
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    position: absolute;
-    border-radius: 50%;
-    top: 25%;
+    top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
-}
-
-.circle_black{
-    justify-content: end;
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    position: absolute;
-    right: 0;
+    border-top: 10px solid #46A358;
+    border-right: 10px solid white;
+    border-bottom: 10px solid #46A358;
+    border-left: 10px solid white;
     border-radius: 50%;
 
-    animation-name: circle_b;
+    animation-name: circle_out;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
-.circle_black_right{
-    width: 100px;
-    height: 200px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    background: white;
-    position: relative;
-    z-index: 12;
-}
-
-.circle_right_inter{
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    position: absolute;
-    border-radius: 50%;
-    top: 25%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
-@keyframes circle_w {
-    0% {
-        left: 0%;
-        top: 50%;
-        transform: translate(0, -50%) rotate(0deg);
+@keyframes circle_out {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
     }
-    20% {
-        left: 50%;
-        top: 50%;
+
+    100%{
         transform: translate(-50%, -50%) rotate(360deg);
     }
+}
 
-    30% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(405deg);
-    }
+.circle_in{
+    width: 230px;
+    height: 230px;
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 10px solid white;
+    border-right: 10px solid #46A358;
+    border-bottom: 10px solid white;
+    border-left: 10px solid #46A358;
+    border-radius: 50%;
 
-    40% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(450deg);
-    }
-
-    50% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(495deg);
-    }
-
-    60% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(540deg);
-    }
-
-    70% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(585deg);
-    }
-
-    80% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(630deg);
-    }
-
-    90% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(675deg);
-    }
-
-    100% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(720deg);
-    }
+    animation-name: circle_in;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
 
 }
 
-@keyframes circle_b {
-    0% {
-        left: 100%;
-        top: 50%;
-        transform: translate(-100%, -50%) rotate(0deg);
+@keyframes circle_in {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
     }
 
-
-    20% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-360deg);
+    100%{
+        transform: translate(-50%, -50%) rotate(180deg);
     }
-
-    30% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-405deg);
-    }
-
-    40% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-450deg);
-    }
-
-    50% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-495deg);
-    }
-
-    60% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-540deg);
-    }
-
-    70% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-585deg);
-    }
-
-    80% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-630deg);
-    }
-
-    90% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-675deg);
-    }
-
-    100% {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-720deg);
-    }
-
 }
 
+.hello{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.hello .hello_in{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
 
+.hello .hello_in p{
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 89%;
+    font-style: italic;
+    color: #46A358;
+    position: absolute;
+    left: 300px;
+    padding: 30px;
+    animation: hello;
 
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
 
+@keyframes hello{
+    0%{
+        left: 200px;
+    }
 
-
-
-
-
-
-
-
-
-
-/*.bool{*/
-/*    width: 70px;*/
-/*    height: 70px;*/
-/*    background-color: yellow;*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    animation: bool 5s infinite;*/
-/*}*/
-
-/*.bool-2{*/
-/*    width: 70px;*/
-/*    height: 70px;*/
-/*    background-color: red;*/
-/*    position: absolute;*/
-/*    left: 70px;*/
-/*}*/
-
-/*.bool-3{*/
-/*    width: 70px;*/
-/*    height: 70px;*/
-/*    background-color: blue;*/
-/*    position: absolute;*/
-/*    left: 140px;*/
-/*}*/
-
-/*@keyframes bool {*/
-/*    0%{*/
-/*        left: 10%;*/
-/*        transform: rotate(0deg);*/
-/*    }*/
-/*    30%{*/
-/*        left: 30%;*/
-/*        top: 10%;*/
-/*        transform: rotate(90deg);*/
-/*    }*/
-/*    50%{*/
-/*        left: 80%;*/
-/*        top: 25%;*/
-/*        transform: rotate(180deg);*/
-/*    }*/
-
-/*    80%{*/
-/*        left: 30%;*/
-/*        top: 15%;*/
-/*        transform: rotate(90deg);*/
-/*    }*/
-
-/*    100%{*/
-/*        left: 10%;*/
-/*        transform: rotate(0deg);*/
-/*    }*/
-/*    */
-/*}*/
-
+    100%{
+        left: 0;
+    }
+}
 
 
 
