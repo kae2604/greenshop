@@ -75,6 +75,8 @@
     box-sizing: border-box;
 }
 
+
+
 a{
     text-decoration: none;
 }
@@ -133,6 +135,7 @@ header{
     padding-top: 30px;
     margin-bottom: 12px;
     position: fixed;
+    top: 0;
     z-index: 2;
     width: 100%;
     background-color: white;
@@ -140,6 +143,7 @@ header{
 
 header .container{
     border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+    position: relative;
 }
 
 .header_logo{
@@ -148,7 +152,7 @@ header .container{
 
 header nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -320,6 +324,38 @@ header nav ul li.dropdown ul.submenu li:last-of-type ul.submenu_2 li:hover a{
 }
 
 
+.header_search{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/loupe_grey.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 190px;
+    top: 8px;
+}
+
+.header_search:hover{
+    background-image: url("../images/loupe_green.svg");
+}
+
+.header_basket{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/basket_black.svg");
+    position: absolute;
+    right: 130px;
+    top: 8px;
+}
+
+.header_basket:hover{
+    background-image: url("../images/basket_green.svg");
+}
+
+
 
 
 .header_login{
@@ -449,7 +485,8 @@ main .banner .banner_left a:hover{
 
 .banner_right{
     max-width: 450px;
-    max-height: 450px;
+    width: 100%;
+    height:auto;
 }
 
 
@@ -465,8 +502,8 @@ main .banner .banner_left a:hover{
 
 
 .categories_all{
-    gap: 50px;
     margin-bottom: 90px;
+    gap: 50px;
 }
 
 .categories_left{
@@ -475,7 +512,7 @@ main .banner .banner_left a:hover{
 
 .categories_left_top{
     background: #fbfbfb;
-    padding: 14px 0 365px 18px;
+    padding: 14px 24px 19px 18px;
 }
 
 .categories_left_top h3{
@@ -492,14 +529,16 @@ main .banner .banner_left a:hover{
 }
 
 .categories_left_top ul li{
-    margin-bottom: 29px;
+    margin-bottom: 28px;
 }
 
-.categories_left_top ul li:last-child{
+.categories_left_top ul li:last-of-type{
     margin-bottom: 15px;
 }
 
 .categories_left_top ul li a{
+    display: flex;
+    justify-content: space-between;
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 15px;
@@ -513,9 +552,82 @@ main .banner .banner_left a:hover{
     color: #46a358;
 }
 
-.categories_left_bottom{
-    margin: 0 -30px;
+.categories_left_top ul:first-of-type{
+    margin-bottom: 36px;
 }
+
+.categories .green_line{
+    padding: 0 66px 0 12px;
+    margin-bottom: 15px;
+    gap: 3px;
+}
+
+.categories .green_line span:first-of-type{
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #46a358;
+}
+
+.categories .green_line span:nth-of-type(2){
+    height: 4px;
+    width: 120px;
+    background-color: #46a358;
+}
+.categories .green_line span:nth-of-type(3){
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: #46a358;
+}
+
+.categories .green_line span:last-of-type{
+    width: 40px;
+    height: 4px;
+    background-color: rgba(70, 163, 88, 0.2);;
+}
+
+
+.categories_left_top_price{
+    margin-bottom: 16px;
+    padding-left: 12px;
+}
+
+.categories_left_top_price span:first-of-type{
+    font-family: 'cera_proregular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    margin-right: 5px;
+}
+
+.categories_left_top_price:nth-of-type(2){
+    font-family: 'cera_probold';
+    font-weight: 700;
+    color: #46a358;
+}
+
+.categories_left_top_button{
+    display: inline-block;
+    padding: 8px 25px;
+    background: #46a358;
+    border-radius: 6px;
+    font-family: 'cera_probold';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: #fff;
+    border: 1px solid #46a358;
+    margin: 0 0 46px 12px;
+}
+
+.categories_left_top_button:hover{
+    border: 1px solid red;
+}
+
+
+
 
 .categories_right{
     max-width: 840px;
@@ -537,6 +649,15 @@ main .banner .banner_left a:hover{
 
 .categories_right_top_left li:nth-of-type(2){
     width: 100px;
+}
+
+.categories_left_top h3:nth-of-type(2){
+    margin-bottom: 20px;
+}
+
+.categories_right_top_left li{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -587,7 +708,7 @@ main .banner .banner_left a:hover{
 }
 
 .categories_right_next{
-    gap: 70px 33px;
+    gap: 70px 0;
 }
 
 .categories_right_card{
@@ -595,7 +716,9 @@ main .banner .banner_left a:hover{
     border-top:  1px solid #fbfbfb;
     overflow: hidden;
     position: relative;
+    margin: auto;
 }
+
 
 .categories_right_card:hover{
     border-top:  1px solid #46a358;
@@ -805,12 +928,17 @@ main .banner .banner_left a:hover{
     background-color: #FBFBFB;
     max-width: 586px;
     padding: 37px 30px 46px 0;
+
+}
+
+.promo_left{
     position: relative;
+
 }
 
 .promo_left img{
     position: absolute;
-    bottom: 10px;
+    top: -85px;
     max-width: 287px;
     height: 292px;
 }
@@ -969,7 +1097,7 @@ main .banner .banner_left a:hover{
 
 .newsletter_all{
     background: #fbfbfb;
-    padding: 24px 25px;
+    padding: 25px;
 }
 
 .newsletter_block{
@@ -1079,12 +1207,7 @@ main .banner .banner_left a:hover{
 
 .contacts_all{
     background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
-    height: 88px;
-}
-
-
-.contacts_all img{
-    padding-left: 23px;
+    padding: 25px;
 }
 
 .contacts_all a{
@@ -1150,7 +1273,6 @@ main .banner .banner_left a:hover{
     left: -28px;
     top: 2px;
 }
-
 
 
 
