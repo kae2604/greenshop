@@ -1,3 +1,9 @@
+
+
+
+
+
+
 $color_hover: #FF0000;
 //#46A358
 
@@ -312,37 +318,6 @@ header{
             }
         }
 
-
-      .header_search{
-        display: block;
-        content: "";
-        width: 20px;
-        height: 20px;
-        background-image: url("../images/loupe_grey.svg");
-        background-repeat: no-repeat;
-        position: absolute;
-        right: 190px;
-        top: 8px;
-        &:hover{
-          background-image: url("../images/loupe_green.svg");
-        }
-      }
-
-      .header_basket{
-        display: block;
-        content: "";
-        width: 24px;
-        height: 24px;
-        background-image: url("../images/basket_black.svg");
-        position: absolute;
-        right: 130px;
-        top: 8px;
-        &:hover{
-          background-image: url("../images/basket_green.svg");
-        }
-      }
-
-
       .header_login{
         margin-bottom: 18px;
         border-radius: 7px;
@@ -388,6 +363,35 @@ header{
           &:focus {
             outline: none;
           }
+        }
+      }
+
+      .header_search{
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url("../images/loupe_grey.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 190px;
+        top: 8px;
+        &:hover{
+          background-image: url("../images/loupe_green.svg");
+        }
+      }
+
+      .header_basket{
+        display: block;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url("../images/basket_black.svg");
+        position: absolute;
+        right: 130px;
+        top: 8px;
+        &:hover{
+          background-image: url("../images/basket_green.svg");
         }
       }
     }
@@ -504,11 +508,15 @@ main{
             padding-left: 12px;
 
             &:first-of-type{
-              margin-bottom: 50px;
+              margin-bottom: 36px;
             }
 
             li{
               margin-bottom: 28px;
+
+              &:last-of-type{
+                margin-bottom: 15px;
+              }
 
               a{
                 display: flex;
@@ -527,7 +535,7 @@ main{
               }
             }
           }
-          .categories .green_line{
+           .green_line{
             padding: 0 66px 0 12px;
             margin-bottom: 15px;
             gap: 3px;
@@ -665,7 +673,8 @@ main{
           }
         }
         .categories_right_next{
-          gap: 70px 0;
+          justify-content: start;
+          gap: 70px 33px;
 
           .categories_right_card{
             max-width: 258px;
@@ -913,6 +922,7 @@ main{
 .promo{
   margin-bottom: 138px;
   .container{
+    gap: 20px;
     .promo_all{
       background-color: #FBFBFB;
       max-width: 586px;
@@ -1010,67 +1020,73 @@ main{
     }
 
     .blog_bottom{
-      flex-direction: column;
-      max-width: 268px;
-      width: 100%;
 
-      .blog_bottom_bottom{
-        background-color: #FBFBFB;
-        padding: 9px 11px 12px 15px;
+      .blog_card{
+        flex-direction: column;
+        max-width: 268px;
+        width: 100%;
 
-        p{
-          font-family: 'cera_promedium';
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 114%;
-          color: #46a358;
-          margin: 8px 0 4px;
+        .blog_card_bottom{
+          background-color: #FBFBFB;
+          padding: 9px 11px 12px 15px;
 
-          &:nth-of-type(2){
-            font-family: 'cera_proregular';
-            font-weight: 400;
+          p{
+            font-family: 'cera_promedium';
+            font-weight: 500;
             font-size: 14px;
-            line-height: 157%;
-            color: #727272;
-            margin-bottom: 9px;
-          }
-        }
-        h3{
-          font-family: 'cera_probold';
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 130%;
-          color: #3d3d3d;
-          margin-bottom: 4px;
-        }
-        a{
-          font-family: 'cera_promedium';
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 114%;
-          color: #3d3d3d;
+            line-height: 114%;
+            color: #46a358;
+            margin: 8px 0 4px;
 
-          &:hover{
-            color: $color_hover;
-
-            &:after{
-              background-image: url("../images/arrow_right_g.svg");
+            &:nth-of-type(2){
+              font-family: 'cera_proregular';
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 157%;
+              color: #727272;
+              margin-bottom: 9px;
             }
           }
+          h3{
+            font-family: 'cera_probold';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            color: #3d3d3d;
+            margin-bottom: 4px;
+          }
+          a{
+            font-family: 'cera_promedium';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 114%;
+            color: #3d3d3d;
 
-          &:after{
-            display: inline-flex;
-            align-items: center;
-            content: "";
-            width: 16px;
-            height: 16px;
-            background-image: url("../images/arrow_right_b.svg");
-            background-repeat: no-repeat;
-            margin-left: 6px;
+            &:hover{
+              color: $color_hover;
+
+              &:after{
+                background-image: url("../images/arrow_right_g.svg");
+              }
+            }
+
+            &:after{
+              display: inline-flex;
+              align-items: center;
+              content: "";
+              width: 16px;
+              height: 16px;
+              background-image: url("../images/arrow_right_b.svg");
+              background-repeat: no-repeat;
+              margin-left: 6px;
+            }
           }
         }
+
+
+
       }
-    }
+ }
   }
 }
 
@@ -1080,6 +1096,7 @@ main{
 .newsletter_all{
   background: #fbfbfb;
   padding: 25px;
+
 
   .newsletter_block{
     max-width: 204px;
@@ -1640,15 +1657,6 @@ footer{
     left: 0;
   }
 }
-
-
-
-
-
-
-
-
-
 
 
 
