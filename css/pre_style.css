@@ -301,6 +301,22 @@ main {
   padding-top: 95px;
 }
 
+.owl-carousel .promo {
+  margin-bottom: 0;
+}
+.owl-carousel .promo .container {
+  padding-top: 100px;
+}
+.owl-carousel .promo .container .promo_all .promo_left img {
+  width: 287px;
+}
+.owl-carousel .blog {
+  margin-bottom: 20px;
+}
+.owl-carousel .blog .container {
+  padding-top: 20px;
+}
+
 .banner .container {
   background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
   margin-bottom: 46px;

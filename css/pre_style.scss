@@ -2,11 +2,8 @@
 
 
 
-
-
 $color_hover: #FF0000;
 //#46A358
-
 
 
 
@@ -81,7 +78,6 @@ $color_hover: #FF0000;
 
 
 
-
 *{
   padding: 0;
   margin: 0;
@@ -137,6 +133,9 @@ a{
   max-width: 1200px;
   margin: auto;
 }
+
+
+
 
 
 
@@ -403,6 +402,31 @@ main{
 }
 
 
+.owl-carousel{
+  .promo{
+    margin-bottom: 0;
+    .container{
+      padding-top: 100px;
+      .promo_all{
+        .promo_left{
+          img{
+            width: 287px;
+          }
+        }
+      }
+    }
+  }
+  .blog{
+    margin-bottom: 20px;
+    .container{
+      padding-top: 20px;
+    }
+  }
+}
+
+
+
+
 .banner{
   .container{
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
@@ -471,6 +495,7 @@ main{
     }
   }
 }
+
 
 
 
